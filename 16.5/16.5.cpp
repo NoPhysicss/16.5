@@ -1,4 +1,8 @@
 ﻿#include <iostream>
+//#include <time.h>
+
+
+
 
 int main()
 {
@@ -24,7 +28,14 @@ int main()
         std::cout << std::endl;
     }
 
-    int dayi = (24 % x);
+   // struct tm buf;
+
+   // time_t t = time(NULL);
+   // localtime_s(&buf, &t);
+   //buf.tm_mday.
+    
+
+    int dayi = (2 % x);
     int sum = arr[dayi][0];
 
     for (dayi; dayi < x; dayi)
