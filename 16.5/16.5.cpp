@@ -28,14 +28,14 @@ int main()
         std::cout << std::endl;
     }
 
-   // struct tm buf;
+    struct tm buf;
 
-   // time_t t = time(NULL);
-   // localtime_s(&buf, &t);
-   //buf.tm_mday.
+    time_t t = time(NULL);
+    localtime_s(&buf, &t);
+   
     
 
-    int dayi = (2 % x);
+    int dayi = (buf.tm_mday % x);
     int sum = arr[dayi][0];
 
     for (dayi; dayi < x; dayi)
